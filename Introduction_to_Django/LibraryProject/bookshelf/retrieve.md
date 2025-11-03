@@ -1,16 +1,8 @@
-# Retrieve Operation
+# retrieve.md
 
-Command:
+# Retrieve the book you just created
+book = Book.objects.get(title="1984")
+book.title, book.author, book.publication_year
+# Expected output:
+# ('1984', 'George Orwell', 1949)
 
-```python
-from bookshelf.models import Book
-
-books = Book.objects.all()
-books
-
-Expected Output (example):
-
-<QuerySet [<Book: 1984 by George Orwell>]>
-
-
-Comment: All Book instances are retrieved from the database, displaying the "1984" book created earlier.

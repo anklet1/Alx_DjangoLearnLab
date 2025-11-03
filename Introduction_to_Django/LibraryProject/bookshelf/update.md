@@ -1,9 +1,3 @@
-
----
-
-**`update.md`**  
-
-```markdown
 # Update Operation
 
 Command:

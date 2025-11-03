@@ -1,9 +1,3 @@
-
----
-
-**`retrieve.md`**  
-
-```markdown
 # Retrieve Operation
 
 Command:

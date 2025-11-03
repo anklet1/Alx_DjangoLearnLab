@@ -1,9 +1,3 @@
-
----
-
-**`delete.md`**  
-
-```markdown
 # Delete Operation
 
 Command:

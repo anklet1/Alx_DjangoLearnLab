@@ -1,18 +1,13 @@
-# Delete Operation
+# delete.md
 
-Command:
+# Retrieve the book first
+book = Book.objects.get(title="Nineteen Eighty-Four")
 
-```python
-from bookshelf.models import Book
+# Delete the book
+book.delete()
 
-book1 = Book.objects.get(title="Nineteen Eighty-Four")
-book1.delete()
+# Verify deletion
+Book.objects.all()
+# Expected output:
+# <QuerySet []>
 
-books = Book.objects.all()
-books
-
-
-Expected Output (example):
-
-(1, {'bookshelf.Book': 1})
-<QuerySet []>

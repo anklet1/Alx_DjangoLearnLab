@@ -1,18 +1,14 @@
-# Update Operation
+# update.md
 
-Command:
+# Retrieve the book first
+book = Book.objects.get(title="1984")
 
-```python
-from bookshelf.models import Book
+# Update the title
+book.title = "Nineteen Eighty-Four"
+book.save()
 
-book1 = Book.objects.get(title="1984")
-book1.title = "Nineteen Eighty-Four"
-book1.save()
-book1
+# Verify update
+book.title
+# Expected output:
+# 'Nineteen Eighty-Four'
 
-Expected Output (example):
-
-<Book: Nineteen Eighty-Four by George Orwell>
-
-
-Comment: The title of the book has been updated from "1984" to "Nineteen Eighty-Four".
